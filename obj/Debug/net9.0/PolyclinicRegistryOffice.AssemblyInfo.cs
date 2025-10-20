@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PolyclinicRegistryOffice")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3691312041b6a5adc9f9914d687b5c4b6ee0da50")]
 [assembly: System.Reflection.AssemblyProductAttribute("PolyclinicRegistryOffice")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PolyclinicRegistryOffice")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

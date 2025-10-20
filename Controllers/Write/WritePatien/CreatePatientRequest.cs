@@ -1,4 +1,4 @@
-using PolyclinicRegistryOffice.Application.Handlers.Patient.Write.Command;
+using PolyclinicRegistryOffice.Application.Handlers.WriteHandlers.Patient.Write.Command;
 
 namespace PolyclinicRegistryOffice.Controllers.Write.WritePatien;
 

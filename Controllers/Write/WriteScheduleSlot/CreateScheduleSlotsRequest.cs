@@ -1,4 +1,4 @@
-using PolyclinicRegistryOffice.Application.Handlers.ScheduleSlot.Write.Command;
+using PolyclinicRegistryOffice.Application.Handlers.WriteHandlers.ScheduleSlot.Write.Command;
 using PolyclinicRegistryOffice.Dtos;
 
 namespace PolyclinicRegistryOffice.Controllers.Write.WriteScheduleSlot;

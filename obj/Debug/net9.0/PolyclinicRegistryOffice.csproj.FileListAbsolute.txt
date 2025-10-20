@@ -209,3 +209,5 @@
 /Users/evgeniyserookiy/RiderProjects/PolyclinicRegistryOffice/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
 /Users/evgeniyserookiy/RiderProjects/PolyclinicRegistryOffice/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
 /Users/evgeniyserookiy/RiderProjects/PolyclinicRegistryOffice/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/evgeniyserookiy/RiderProjects/PolyclinicRegistryOffice/obj/Debug/net9.0/PolyclinicRegistryOffice.sourcelink.json
+/Users/evgeniyserookiy/RiderProjects/PolyclinicRegistryOffice/bin/Debug/net9.0/Dapper.dll

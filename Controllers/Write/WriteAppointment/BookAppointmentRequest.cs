@@ -1,4 +1,4 @@
-using PolyclinicRegistryOffice.Application.Handlers.Appointment.Write.Command;
+using PolyclinicRegistryOffice.Application.Handlers.WriteHandlers.Appointment.Write.Command;
 
 namespace PolyclinicRegistryOffice.Controllers.Write.WriteAppointment;
 

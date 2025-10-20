@@ -38,6 +38,14 @@ public static class Errors
                 $"Specialist with ID {id} not found."
             );
         }
+        
+        public static Error Database(string message)
+        {
+            return Error.Failure(
+                "specialist.database.error",
+                message
+            );
+        }
     }
 
     public static class Appointment
@@ -88,6 +96,14 @@ public static class Errors
         {
             return Error.Conflict(
                 "schedule.slot.overlap",
+                message
+            );
+        }
+        
+        public static Error Database(string message)
+        {
+            return Error.Failure(
+                "schedule.slot.database.error",
                 message
             );
         }

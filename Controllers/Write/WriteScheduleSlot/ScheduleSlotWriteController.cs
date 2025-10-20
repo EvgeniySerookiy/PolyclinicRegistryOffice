@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using PolyclinicRegistryOffice.Application.Interfaces;
+using PolyclinicRegistryOffice.Application.Interfaces.WriteInterfaces;
 using PolyclinicRegistryOffice.Dtos;
 using PolyclinicRegistryOffice.ErrorContext;
 

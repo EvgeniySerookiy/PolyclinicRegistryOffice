@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PZZtdD31u6w=",
+  "dgSpecHash": "b6kF1GlvMgs=",
   "success": true,
   "projectFilePath": "/Users/evgeniyserookiy/RiderProjects/PolyclinicRegistryOffice/PolyclinicRegistryOffice.csproj",
   "expectedPackageFiles": [
+    "/Users/evgeniyserookiy/.nuget/packages/dapper/2.1.66/dapper.2.1.66.nupkg.sha512",
     "/Users/evgeniyserookiy/.nuget/packages/fluentvalidation/12.0.0/fluentvalidation.12.0.0.nupkg.sha512",
     "/Users/evgeniyserookiy/.nuget/packages/fluentvalidation.aspnetcore/11.3.1/fluentvalidation.aspnetcore.11.3.1.nupkg.sha512",
     "/Users/evgeniyserookiy/.nuget/packages/fluentvalidation.dependencyinjectionextensions/12.0.0/fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",
