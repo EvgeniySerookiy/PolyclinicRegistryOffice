@@ -10,7 +10,7 @@ export default function Header() {
           <nav className="flex items-center justify-between gap-4 text-sm font-medium">
             <NavItem to="/">ГЛАВНАЯ</NavItem>
             <NavItem to="/doctors">ВРАЧИ</NavItem>
-            <NavItem to="/login">ВХОД</NavItem>
+            {/*<NavItem to="/login">ВХОД</NavItem>*/}
           </nav>
         </div>
         <div className="flex items-center justify-between gap-4">

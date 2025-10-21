@@ -16,7 +16,7 @@ public class ScheduleSlotReadHandler(
         {
             using var connection = sqlConnectionFactory.Connection();
 
-            // 1️⃣ Получаем исходные широкие слоты расписания, используя анонимный тип.
+            // Получаем исходные широкие слоты расписания, используя анонимный тип.
             const string sqlSlots = @"
                 SELECT 
                     ss.""Id"" AS ""ScheduleId"",
@@ -43,7 +43,7 @@ public class ScheduleSlotReadHandler(
                 DurationMinutes = (int)s.DurationMinutes
             }).ToList();
 
-            // 2️⃣ Получаем список дат для поиска занятых слотов
+            // Получаем список дат для поиска занятых слотов
             var scheduleDates = scheduleSlots.Select(s => s.Date.Date).Distinct().ToList();
             
             if (!scheduleDates.Any())
@@ -51,7 +51,7 @@ public class ScheduleSlotReadHandler(
                 return Result<IEnumerable<GetFreeSlotDto>, Error>.Success(Enumerable.Empty<GetFreeSlotDto>());
             }
 
-            // 3️⃣ Получаем уже занятые времена только для актуальных дат
+            // Получаем уже занятые времена только для актуальных дат
             const string sqlAppointments = @"
                 SELECT 
                     a.""AppointmentDate"" AS ""Date"",
@@ -68,7 +68,7 @@ public class ScheduleSlotReadHandler(
                                       cancellationToken: cancellationToken)
             )).ToList();
 
-            // 4️⃣ Генерация свободных интервалов
+            // Генерация свободных интервалов
             var freeSlots = new List<GetFreeSlotDto>();
 
             foreach (var s in scheduleSlots)

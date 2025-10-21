@@ -33,7 +33,7 @@ export default function SidePanel() {
   const [success, setSuccess] = useState(false);
   const [errorSubmit, setErrorSubmit] = useState(null);
 
-  // 🔹 Загрузка специализаций
+  // Загрузка специализаций
   useEffect(() => {
     async function fetchSpecialization() {
       try {
@@ -52,7 +52,7 @@ export default function SidePanel() {
     fetchSpecialization();
   }, []);
 
-  // 🔹 Загрузка врачей при выборе специализации
+  // Загрузка врачей при выборе специализации
   useEffect(() => {
     if (selectedSpec.length > 0) {
       const specializationId = selectedSpec[0].value;
@@ -85,7 +85,7 @@ export default function SidePanel() {
     }
   }, [selectedSpec]);
 
-  // 🔹 Загрузка свободных слотов при выборе врача
+  // Загрузка свободных слотов при выборе врача
   useEffect(() => {
     if (selectedDoctor.length > 0) {
       const specialistId = selectedDoctor[0].value;
@@ -115,7 +115,7 @@ export default function SidePanel() {
     }
   }, [selectedDoctor]);
 
-  // 🔹 Фильтрация времени при выборе даты
+  // Фильтрация времени при выборе даты
   const availableDates = [...new Set(freeSlots.map((slot) => slot.date))];
 
   function handleDateSelect(date) {
@@ -185,7 +185,7 @@ export default function SidePanel() {
     }
   }
 
-  // 🔹 Блокировка прокрутки фона при открытой панели
+  // Блокировка прокрутки фона при открытой панели
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
     return () => (document.body.style.overflow = "");
@@ -283,7 +283,7 @@ export default function SidePanel() {
             </>
           )}
 
-          {/* 👤 Данные пациента */}
+          {/*  Данные пациента */}
           {selectedTime.length > 0 && (
             <form onSubmit={handleSubmit} className="space-y-3">
               <h3 className="text-sm font-semibold">Данные пациента</h3>
@@ -348,11 +348,6 @@ export default function SidePanel() {
 
               {errorSubmit && (
                 <p className="text-sm text-red-600">{errorSubmit}</p>
-              )}
-              {success && (
-                <p className="text-sm text-green-600">
-                  ✅ Запись успешно оформлена!
-                </p>
               )}
 
               <button
