@@ -1,7 +1,14 @@
+import { useSidePanel } from "../../contexsts/SidePanelContext.jsx";
+
 export default function Button({ children }) {
-    return (
-        <button className="px-5 py-3 rounded-md text-white text-base bg-red-600 hover:text-black hover:bg-white hover:outline-1 hover:outline-red-600">
-            {children}
-        </button>
-    );
+  const { openPanel } = useSidePanel();
+
+  return (
+    <button
+      onClick={openPanel}
+      className="rounded-md bg-red-600 px-5 py-3 text-base text-white transition-colors hover:bg-white hover:text-black hover:outline-1 hover:outline-red-600"
+    >
+      {children}
+    </button>
+  );
 }

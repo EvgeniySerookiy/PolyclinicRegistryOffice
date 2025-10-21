@@ -6,8 +6,7 @@ using PolyclinicRegistryOffice.Interfaces;
 namespace PolyclinicRegistryOffice.Application.Handlers.ReadHandlers.ScheduleSlot.Read;
 
 public class ScheduleSlotReadHandler(
-    ISqlConnectionFactory sqlConnectionFactory
-) : IScheduleSlotReadHandler
+    ISqlConnectionFactory sqlConnectionFactory) : IScheduleSlotReadHandler
 {
     public async Task<Result<IEnumerable<GetFreeSlotDto>, Error>> GetFreeSlotsBySpecialist(
         int specialistId,
